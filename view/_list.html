@@ -1,0 +1,26 @@
+<div class="row">
+<article class="content-wrapper">
+<div class="col-md-7">
+<div class="content-title">
+<h3>{% autoescape off %}{{title}}{% endautoescape %}</h3>
+</div>
+<div class="content-summary">
+{% autoescape off %}{{contentText|truncatewords:25}}{% endautoescape %}
+</div>
+</div>
+<div class="col-md-3">
+<div class="summary-infobar" style="clear:both;">
+<p>
+<span class="infobar-label">da: </span><span class="infobar-text">{{ author }} </span>
+<span class="infobar-label"> il: </span><span class="infobar-text">{{ created }} </span>
+<br>
+{% autoescape off %}
+<span class="infobar-label">postato in:  </span><span class="infobar-text">{{ category }} </span><br>
+<span class="infobar-label"> e taggato: </span><span class="infobar-text">{{ tag_list }} </span>
+{% endautoescape %}
+</p>
+</div>
+</div>
+</article>
+</div>
+    

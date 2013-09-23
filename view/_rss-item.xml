@@ -1,0 +1,6 @@
+<item>
+  <title>{{itemTitle}}</title>
+  <link>{{itemLink}}</link>
+  <guid isPermaLink="true">{{itemLink}}</guid>
+  <description>{{itemcontent}}</description>
+</item>

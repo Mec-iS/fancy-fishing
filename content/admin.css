@@ -1,0 +1,91 @@
+body
+{
+    font-family: Verdana, Geneva,Tahoma, sans-serif;
+    font-size: 0.9em;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    width:99%;
+}
+p
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+header, nav, footer, article
+{
+    display: block;
+}
+
+.banner
+{
+    padding:20px;
+    background-color: #68696c;
+    color: #fff;
+}
+
+.content-form
+{
+    padding:20px;
+    }
+
+a, a:link, a:visited
+{
+    color: #aa0000;
+    text-decoration: none;
+}
+a:active, a:hover
+{
+    text-decoration: underline !important;
+}
+
+header a, header a:link, header a:visited
+{
+    color: #fff;
+}
+
+
+.label-name
+{
+    font-size: 0.8em;
+    width: 100px;
+    vertical-align: text-top;
+}
+.label-div
+{
+    margin-top: 5px;
+    padding-left: 4px;
+    width: 90%;
+}
+.edit-fieldset
+{
+    width: 90%;
+}
+
+.post
+{
+    font-family: Verdana, Geneva,Tahoma, sans-serif;
+    font-size: 0.8em;
+    line-height:1.3;
+}
+.edit {color:#999}
+
+.editbox { background-color:#eee; border:none; padding-left:2px;}
+
+.edit-container
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    width: 1010px;
+}
+

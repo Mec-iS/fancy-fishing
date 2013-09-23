@@ -1,0 +1,26 @@
+Release notes:
+
+Installation:
+
+Create a project in the app engine sdk.
+Download the source code and copy to the project folder.  
+Add the contents of "merge into app.yaml.txt" to your existing project app.yaml
+
+VerdataCMS should now run and you should see an unstyled page with a 404 message..
+
+It will look drab, minimal and boring but it can be styled into a rich blog interface.
+
+The template files can be found in the views folder, these provide a solid, semantically correct layout but with minimal styling.  You will need to create your own layout and css files to structure the site to your own requirements.  The project website (at www.verdata.co.uk) uses these same files you can view source of www.verdata.co.uk to see how I have implemented this.
+
+
+IMPORTANT
+Take care not to change any of the template fields surrounded by double curly brackets {{likethis}} unless you understand what you are doing and change the underlying code to match.
+
+
+Adding Content
+Log in to the site using the link in the top right corner.  Tick the administrator option (or use a google login with administrator rights on a live GAE site).  You will now see a ‘new’ link  which you can select to add a new document.  If you are viewing a blog page there is also a link to edit the current page.
+
+The admin interface is the absolute minimum required to make posts - feel free to extend it to meet your needs.
+
+IMPORTANT
+Only type lowercase alphanumeric characters and the dash “-” into the slug, category and tag fields (no spaces).  These fields are the keys to those respective entities.  Later you can edit the “display” field in the  tags and category repositories (through the google admin console) to  something more user friendly.

@@ -1,4 +1,7 @@
-fancy-fishing
-=============
+#DEMO version
 
-tag system and presentation for a blog
+##Fork of 
+
+* [Verdata] (http://www.verdata.co.uk)
+* [lettering.js] (http://letteringjs.com)
+* [isotope.js] (http://isotope.metafizzy.co)

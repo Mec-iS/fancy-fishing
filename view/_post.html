@@ -1,0 +1,33 @@
+<article class="content-wrapper">
+<div class="row">
+<div class="col-md-8">
+<nav>
+    <div class="content-infobar">
+        <ul>
+            <li class="infobar-label">da: </li><li class="infobar-text">{{author}} </li>
+            <li class="infobar-label"> il: </li><li class="infobar-text">{{created}} </li>
+            
+            {% autoescape off %} <li class="infobar-label">postato in: </li><li class="infobar-text">
+                {{ category }} </li><li class="infobar-label"> taggato: </li><li class="infobar-text">
+                    {{ tag_list }} </li>{% endautoescape %}
+        </ul>
+    </div>
+</nav>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8">
+<header class="content-fulltext">
+    <h3>
+    
+        {% autoescape off %}{{title}}{% endautoescape %}</h3>
+</header>
+
+{% autoescape off %}{{content}}{% endautoescape %}
+
+</div>
+
+</div>
+</article>
+
+

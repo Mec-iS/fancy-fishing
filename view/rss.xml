@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>{{headline}}</title>
+    <link>{{siteurl}}</link>
+    <description>{{mission}}</description>
+    <ttl>1800</ttl>
+    {% autoescape off %} {{items}} {% endautoescape %}
+  </channel>
+</rss>

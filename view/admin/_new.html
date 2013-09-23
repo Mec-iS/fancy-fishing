@@ -1,0 +1,53 @@
+
+<article class="content-wrapper">
+
+<form action="/edit" method="post">
+
+<fieldset class="edit-fieldset">
+<legend>{{formTitle}}</legend>
+
+<div class="label-div">
+<label for="title" class="label-name">Titolo Principale</label>
+</div>
+<input class="string" name="title" type="text" size="50" value="{{title}}" />
+
+<div class="label-div">
+<label for="new_slug" class="label-name">slug (prova-di-esempio)</label>
+</div>
+<input class="string" name="new_slug" type="text" size="50" value="{{slug}}" />
+
+<div class="label-div">
+<label for="author" class="label-name">Nome blogger</label>
+</div>
+<input class="string" name="author" type="text" size="50" value="{{author}}" />
+
+<div class="label-div">
+<label for="meta_text" class="label-name">Meta Descrizione (per le ricerche sul database)</label>
+</div>
+<input class="string" id="meta_text" name="meta_text" maxlength="150" type="text" size="100" value="{{meta_text}}" />
+
+<div class="label-div">
+<label for="content" class="label-name">Testo (con tag HTML)</label>
+</div>
+<textarea name="content" class="post" rows="10" cols="120">{{content}}</textarea>
+
+<div class="label-div">
+<label for="category_id" class="label-name">Categoria (le principali sono: intro(per segnalare un sito), news(attualit&agrave;), commento(commentare una notizia))</label>
+</div>
+<input class="string" name="category_id" maxlength="150" type="text" size="100" value="{{category_id}}" />
+
+
+<div class="label-div">
+<label for="tag_list" class="label-name">Lista di tag (parole chiave, usare "|"(pipe) come separatore. NON ripetere la categoria tra le tag)</label>
+</div>
+<input class="string" name="tag_list" maxlength="150" type="text" size="100" value="{{tag_list}}" />
+
+</fieldset>
+<br >
+<input type="hidden" name="action_type" value="new" />
+
+<input type="image" src="/images/post.png" />
+</form>
+</article>
+
+

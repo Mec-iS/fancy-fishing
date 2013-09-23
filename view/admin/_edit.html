@@ -1,0 +1,70 @@
+
+<form action="/edit" method="post">
+
+<fieldset class="edit-fieldset">
+<legend>{{formTitle}}</legend>
+
+<div class="label-div">
+<label for="title" class="label-name">Titolo</label>
+</div>
+<input class="string" name="title" type="text" size="50" value="{{title}}" />
+
+<div id="edit_slug">
+<div class="label-div">
+<label for="slug" class="label-name edit">slug (prova-di-esempio)</label>
+</div>
+<input class="editbox" readonly="true" name="slug" type="text" size="50" value="{{slug}}" />
+</div>
+
+<div id="new_slug" style="display:none;">
+<div class="label-div">
+<label for="new_slug" class="label-name edit">nuova slug</label>
+</div>
+<input class="string"  name="new_slug" type="text" size="50" value="" />
+</div>
+
+
+<div class="label-div">
+<label for="author" class="label-name">Nome blogger</label>
+</div>
+<input class="string" name="author" type="text" size="50" value="{{author}}" />
+
+<div class="label-div">
+<label for="meta_text" class="label-name">Meta Descrizione (per le ricerche sul database)</label>
+</div>
+<input class="string" name="meta_text" maxlength="150" type="text" size="100" value="{{meta_text}}" />
+
+<div class="label-div">
+<label for="content" class="label-name">Testo (con tag HTML)</label>
+</div>
+<textarea name="content" class="document" rows="20" cols="120">{{content}}</textarea>
+
+<div class="label-div">
+<label for="category_id" class="label-name edit">Categoria (se possibile usarne una gi&agrave; esistente)</label>
+</div>
+<input class="string" name="category_id" type="text" size="50" value="{{category_id}}" />
+
+<div class="label-div">
+<label for="tag_list" class="label-name edit">Lista di tag (parole chiave, usare "|"(pipe) come separatore)</label>
+</div>
+<input class="string"  name="tag_list" type="text" size="50" value="{{tag_list}}" />
+
+<div class="label-div">
+<label for="action_type" class="label-name edit">Cosa farne del post:</label>
+</div>
+<select name="action_type" id="action_type" onChange="showNewSlug()">
+<option value="edit">Salva le modifiche</option>
+<option value="new">Salva come nuovo post</option>
+<option value="delete">Cancella questo post</option>
+</select>
+
+
+</fieldset>
+
+<br>
+<input type="hidden" name="old_tag_list" value="{{tag_list}}" />
+<input type="hidden" name="old_category_id" value="{{category_id}}" />
+<input type="image" src="/images/post.png"  />
+</form>
+
+</script>

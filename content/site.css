@@ -1,0 +1,82 @@
+body, html{
+width:100%;
+margin: 0;
+padding:0;
+font-family:'Helvetica',sans-serif;
+
+}
+.content-wrapper{
+margin-left:5%;
+
+}
+
+.label-div{
+width:90%;
+
+}
+
+li{
+list-style-type:none;
+
+}
+
+.btn-mini {
+margin-top:1%;
+}
+
+
+.main-container{
+margin-top:2%;
+}
+
+.summary-infobar{
+font-size:75%;
+padding-left:10%;
+}
+
+
+.content-summary{
+padding-left:3%;
+width:80%;
+}
+
+.content-infobar{
+width:100%;
+}
+
+.content-infobar ul, .content-infobar li {
+display: inline ;
+padding: 0px 3px 0px 3px ;
+}
+
+.infobar-text {
+font-weight:bold;
+}
+
+article{
+margin-bottom:3%;
+border-bottom:1px solid;
+}
+
+article h3, article h4{
+font-family:'FranchiseRegular','HelveticaNeue-Bold','League Gothic','Impact',sans-serif;
+font-weight: normal;
+}
+
+#logo{font-weight: normal;font-family:'FranchiseRegular','HelveticaNeue-Bold','League Gothic','Impact',sans-serif;font-size:2em;margin-bottom:3%;margin-left:10px;color:#c44032;text-shadow:#863027 -4px 4px 0;margin-top:30px;}
+#logo span{display:inline-block;position:relative;letter-spacing:-1px;-webkit-transition:all 0.2s ease-out;}
+#logo span:hover{top:3px}
+#logo .char2 {color:#000;text-shadow:#9b4d1f -4px 4px 0}
+#logo .char11{color:#e36b23;text-shadow:#9b4d1f -4px 4px 0}
+#logo .char3 {color:#000;text-shadow:#9b4d1f -4px 4px 0}
+#logo .char10{z-index:10;color:#e6c92e;text-shadow:#9c8b26 -4px 4px 0}
+#logo .char4 {color:#000;text-shadow:#9b4d1f -4px 4px 0} 
+#logo .char9{color:#5da028;text-shadow:#427021 -4px 4px 0}
+#logo .char5 {color:#000;text-shadow:#9b4d1f -4px 4px 0}
+#logo .char8{color:#4584be;text-shadow:#2f597f -4px 4px 0}
+#logo .char6 {color:#000;text-shadow:#9b4d1f -4px 4px 0}
+#logo .char7{color:#7073cf;text-shadow:#4a4d88 -4px 4px 0}
+#logo .char1{color:#000;text-shadow:#863027;-webkit-transform:rotate(-3deg)}
+#logo .char3{top:-1px;-webkit-transform:rotate(2deg)}
+#logo .char4{top:-7px}
+#logo .char6{top:-7px;-webkit-transform:rotate(2deg)}
